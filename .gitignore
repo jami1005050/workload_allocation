@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+**/.ipynb_checkpoints/
+
+# Generated synthetic data (regenerate via `make data`) -- root-level only,
+# NOT src/greenload/data/ (that's source code, not generated output).
+/data/
+
+# Trained model weights (~75MB for all 8 models -- regenerate via `make train`,
+# ~10-15 min on CPU). Figures, metrics.json, and training_history.json ARE
+# committed: small, and what the README/demo notebook actually need to render
+# without anyone having to retrain first.
+results/checkpoints/
+
+# OS
+.DS_Store
